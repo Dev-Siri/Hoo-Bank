@@ -13,19 +13,19 @@ A fast & modern landing page for a banking website.
 - Clone the repository
 
 ```sh
-git clone https://github.com/Dev-Siri/Hoo-Bank.git
+$ git clone https://github.com/Dev-Siri/Hoo-Bank.git
 ```
 
 - Install the dependencies.
 
 ```sh
-pnpm i
+$ pnpm i
 ```
 
 - Run the local dev server
 
 ```
-pnpm dev
+$ $pnpm dev
 ```
 
 ## License
