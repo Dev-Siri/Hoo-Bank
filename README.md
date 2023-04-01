@@ -25,7 +25,7 @@ $ pnpm i
 - Run the local dev server
 
 ```
-$ $pnpm dev
+$ pnpm dev
 ```
 
 ## License
