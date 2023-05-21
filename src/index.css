@@ -51,7 +51,7 @@ html {
     #7de7eb 29.82%,
     #5ce1e6 51.94%,
     #33bbcf 90.29%
-  );
+  ) !important;
 }
 
 .bg-black-gradient {
@@ -145,4 +145,12 @@ html {
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+#nav-toggle + #mobile-nav {
+  display: none;
+}
+
+#nav-toggle:checked + #mobile-nav {
+  display: flex;
 }

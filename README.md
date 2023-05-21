@@ -1,10 +1,10 @@
 # HooBank
 
-A fast & modern landing page for a banking website.
+A fast & modern banking landing page website.
 
 ## Technologies
 
-- Preact
+- Astro
 - TailwindCSS
 - Vite (Build Tool)
 

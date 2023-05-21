@@ -1,0 +1,48 @@
+---
+import "../index.css";
+
+import styles from "../styles";
+
+import Hero from "../components/Hero.astro";
+import Navbar from "../components/Navbar.astro";
+import Stats from "../components/Stats.astro";
+import Business from "../components/Business.astro";
+import Billing from "../components/Billing.astro";
+import CardDeal from "../components/CardDeal.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Clients from "../components/Clients.astro";
+import CTA from "../components/CTA.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HooBank</title>
+  </head>
+  <body class="bg-primary w-full">
+    <Navbar />
+    <main>
+      <section class={`bg-primary ${styles.flexStart}`}>
+        <div class={`${styles.boxWidth}`}>
+          <Hero />
+        </div>
+      </section>
+      <div class={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div class={styles.boxWidth}>
+          <Stats />
+          <Business />
+          <Billing />
+          <CardDeal />
+          <Testimonials />
+          <Clients />
+          <CTA />
+          <Footer />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
