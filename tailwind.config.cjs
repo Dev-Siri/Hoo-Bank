@@ -22,4 +22,7 @@ module.exports = {
       xl: "1700px",
     },
   },
+  experimental: {
+    optimizeUniversalDefaults: true,
+  },
 };

@@ -31,6 +31,6 @@ import FeedBackCard from "./FeedBackCard.astro";
   <div
     class="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]"
   >
-    {feedback.map((card) => <FeedBackCard key={card.id} {...card} />)}
+    {feedback.map((card) => <FeedBackCard {...card} />)}
   </div>
 </section>

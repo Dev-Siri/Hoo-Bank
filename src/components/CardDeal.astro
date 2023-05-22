@@ -1,6 +1,7 @@
 ---
 import { card } from "../assets";
 import styles, { layout } from "../styles";
+
 import Button from "./Button.astro";
 ---
 
@@ -17,6 +18,12 @@ import Button from "./Button.astro";
     <Button styles="mt-10" />
   </div>
   <div class={layout.sectionImg}>
-    <img src={card} alt="card" class="h-full w-full" />
+    <img
+      src={card}
+      alt="card"
+      decoding="async"
+      loading="lazy"
+      class="h-full w-full"
+    />
   </div>
 </section>

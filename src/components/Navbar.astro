@@ -1,21 +1,17 @@
 ---
-import { logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import styles from "../styles";
+
+import Logo from "../assets/svg/Logo.astro";
+import Menu from "../assets/svg/Menu.astro";
 ---
 
-<nav
-  class={`w-full flex py-6 justify-between items-center navbar ${styles.paddingX} ${styles.flexCenter} ${styles.boxWidth}`}
->
-  <img src={logo} alt="hoobank" class="w-[124px] h-[32px]" />
+<nav class={`w-full flex py-6 justify-between items-center navbar ${styles.paddingX} ${styles.flexCenter} ${styles.boxWidth}`}>
+  <Logo height={32} width={124} />
   <ul class="list-none sm:flex hidden justify-end items-center flex-1">
     {
       navLinks.map((navLink, index) => (
-        <li
-          class={`font-poppins font-normal cursor-pointer text-[16px] ${
-            index === navLink.length - 1 ? "mr-0" : "mr-10"
-          } text-white`}
-        >
+        <li class={`font-poppins font-normal cursor-pointer text-base ${index === navLink.length - 1 ? "mr-0" : "mr-10"} text-white`}>
           <a href={`#${navLink.id}`}>{navLink.title}</a>
         </li>
       ))
@@ -23,21 +19,14 @@ import styles from "../styles";
   </ul>
   <div class="sm:hidden flex flex-1 justify-end items-center">
     <label for="nav-toggle">
-      <img src={menu} alt="menu" class="w-7 h-7 object-contain" />
+      <Menu />
     </label>
     <input id="nav-toggle" type="checkbox" class="hidden" />
-    <div
-      id="mobile-nav"
-      class="p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar"
-    >
+    <div id="mobile-nav" class="p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar">
       <ul class="list-none flex flex-col justify-end items-center flex-1">
         {
           navLinks.map((navLink, index) => (
-            <li
-              class={`font-poppins font-normal cursor-pointer text-[16px] ${
-                index === navLink.length - 1 ? "mr-0" : "mb-4"
-              } text-white`}
-            >
+            <li class={`font-poppins font-normal cursor-pointer text-base ${index === navLink.length - 1 ? "mr-0" : "mb-4"} text-white`}>
               <a href={`#${navLink.id}`}>{navLink.title}</a>
             </li>
           ))
